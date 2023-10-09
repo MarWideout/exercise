@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodMart-Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="main-nav" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form id="search-form" class="d-flex mx-auto" role="search">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>All Categories</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <hr class="search-sep" />
+                    <input class="form-control" type="search" placeholder="Search for more than 20,000 products"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><img src="./images/magnifier.svg"
+                            alt=""></button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-4 align-items-center">
+                    <li class="nav-item header-item-compose">
+                        <p><small>For support ?</small></p>
+                        <a href="Tel:+980-34984089">+980-34984089</a>
+                    </li>
+                    <li class="nav-item header-item-icon">
+                        <a class="nav-link" href="#"><img src="./images/person.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item header-item-icon">
+                        <a class="nav-link"><img src="./images/heart.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item header-item-icon">
+                        <a class="nav-link"><img src="./images/cart.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item header-item-compose">
+                        <p><small>Your Cart</small></p>
+                        <p>$1290.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav id="sec-nav" class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop By Departments
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Offers</a>
+                    </li>
+                </ul>
+                <a class="cuopon-link" href="#"><span><img src="./images/present.svg" alt=""></span> Get Your Coupon
+                    Code</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="billboard">
+            <div class="inner-bildboard container d-flex">
+                <div class="blue-frame">
+
+                    <div id="promoCarousel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="orage-caption"><small>100% Natural</small></p>
+                                        <h3 class="main-caption">Fresh Smoothie &<br />
+                                            Summer Juice</h3>
+                                        <p class="small-caption"><small>Best selling summer juice with natural
+                                                extracts.</small></p>
+                                        <a class="btn-caption" href="">Shop Now</a>
+                                    </div>
+                                    <img src="./images/juice.png" class="d-block" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="orage-caption"><small>100% Natural</small></p>
+                                        <h3 class="main-caption">Fresh Smoothie &<br />
+                                            Summer Juice</h3>
+                                        <p class="small-caption"><small>Best selling summer juice with natural
+                                                extracts.</small></p>
+                                        <a class="btn-caption" href="">Shop Now</a>
+                                    </div>
+                                    <img src="./images/juice.png" class="d-block" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="orage-caption"><small>100% Natural</small></p>
+                                        <h3 class="main-caption">Fresh Smoothie &<br />
+                                            Summer Juice</h3>
+                                        <p class="small-caption"><small>Best selling summer juice with natural
+                                                extracts.</small></p>
+                                        <a class="btn-caption" href="">Shop Now</a>
+                                    </div>
+                                    <img src="./images/juice.png" class="d-block" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="both-frames">
+                    <div class="green-frame">
+                        <p class="first-frame-text">20% Off</p>
+                        <p class="second-frame-text"><small>Sale</small></p>
+                        <h3 class="third-frame-text">Fruits & Vegetables</h3>
+                        <a href="#" class="frame-btn">Shop The Category <span><img src="./images/right-arrow.svg"
+                                    alt=""></span></a>
+                    </div>
+                    <div class="beige-frame">
+                        <p class="first-frame-text">15% Off</p>
+                        <p class="second-frame-text"><small>Sale</small></p>
+                        <h3 class="third-frame-text">Baked Products</h3>
+                        <a href="#" class="frame-btn">Shop The Category <span><img src="./images/right-arrow.svg"
+                                    alt=""></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <div class="car-nav d-flex justify-content-between align-items-center">
+                    <h3 class="sect-title">Category</h3>
+                    <div class="d-flex align-items-center gap-4">
+                        <a class="more-btn" href="#">View All Categories <span><img src="./images/small-right-arr.svg"
+                                    alt=""></span></a>
+                        <div class="d-flex gap-2">
+                            <div class="cat-button-prev swipers-bttn-prev"><img src="./images/chev-left.svg" alt="">
+                            </div>
+                            <div class="cat-button-next swipers-bttn-next"><img src="./images/chev-right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper categories-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/vegetables_broccoli.svg" alt="">
+                            <p class="cat-name">
+                                Fruits & Veges
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/bread_baguette.svg" alt="">
+                            <p class="cat-name">
+                                Breads & Sweets
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/wine_glass_bottle.svg" alt="">
+                            <p class="cat-name">
+                                Wine Drinks
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/soft_drinks_bottle.svg" alt="">
+                            <p class="cat-name">
+                                Oil & Ghee
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/animal_products_drumsticks.svg" alt="">
+                            <p class="cat-name">
+                                Raw Meat
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/bread_herb_flour.svg" alt="">
+                            <p class="cat-name">
+                                Natural Herbs
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/vegetables_broccoli.svg" alt="">
+                            <p class="cat-name">
+                                Fruits & Veges
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/bread_baguette.svg" alt="">
+                            <p class="cat-name">
+                                Breads & Sweets
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="arrived">
+            <div class="container">
+                <div class="car-nav d-flex justify-content-between align-items-center">
+                    <h3 class="sect-title">Newly Arrived Brands</h3>
+                    <div class="d-flex align-items-center gap-4">
+                        <a class="more-btn" href="#">View All Categories <span><img src="./images/small-right-arr.svg"
+                                    alt=""></span></a>
+                        <div class="d-flex gap-2">
+                            <div class="arrived-button-prev swipers-bttn-prev"><img src="./images/chev-left.svg" alt="">
+                            </div>
+                            <div class="arrived-button-next swipers-bttn-next"><img src="./images/chev-right.svg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper arrived-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/honey.png" alt="">
+                            <div>
+                                <p><small>Amber Jar</small></p>
+                                <p class="cat-name">
+                                    Honey best nectar you wish to get
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/herb.png" alt="">
+                            <div>
+                                <p><small>Pure Herb</small></p>
+                                <p class="cat-name">
+                                    Pure herb the only natural brand
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/tuna.png" alt="">
+                            <div>
+                                <p><small>Tuna</small></p>
+                                <p class="cat-name">
+                                    Where's tuna? Tuna, clear choice!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/junk.png" alt="">
+                            <div>
+                                <p><small>Hotz</small></p>
+                                <p class="cat-name">
+                                    the one junk food that’s natural
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/honey.png" alt="">
+                            <div>
+                                <p><small>Amber Jar</small></p>
+                                <p class="cat-name">
+                                    Honey best nectar you wish to get
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/herb.png" alt="">
+                            <div>
+                                <p><small>Pure Herb</small></p>
+                                <p class="cat-name">
+                                    Pure herb the only natural brand
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending">
+            <div class="container">
+                <div class="tabs-header d-flex justify-content-between">
+                    <h3 class="sect-title">Trending Products</h3>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="first-tab" data-bs-toggle="tab"
+                                data-bs-target="#first-tab-pane" type="button" role="tab" aria-controls="first-tab-pane"
+                                aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="second-tab" data-bs-toggle="tab"
+                                data-bs-target="#second-tab-pane" type="button" role="tab"
+                                aria-controls="second-tab-pane" aria-selected="false">Fruits &
+                                Veges</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="third-tab" data-bs-toggle="tab"
+                                data-bs-target="#third-tab-pane" type="button" role="tab" aria-controls="third-tab-pane"
+                                aria-selected="false">Juices</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="fourth-tab" data-bs-toggle="tab"
+                                data-bs-target="#fourth-tab-pane" type="button" role="tab"
+                                aria-controls="fourth-tab-pane" aria-selected="false">Breads &
+                                Sweets</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="fifth-tab" data-bs-toggle="tab"
+                                data-bs-target="#fifth-tab-pane" type="button" role="tab" aria-controls="fifth-tab-pane"
+                                aria-selected="false">Oil &
+                                Ghee</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="six-tab" data-bs-toggle="tab" data-bs-target="#six-tab-pane"
+                                type="button" role="tab" aria-controls="six-tab-pane" aria-selected="false">Raw
+                                Meats</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="seven-tab" data-bs-toggle="tab"
+                                data-bs-target="#seven-tab-pane" type="button" role="tab" aria-controls="seven-tab-pane"
+                                aria-selected="false">Natural
+                                Herbs</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="first-tab-pane" role="tabpanel"
+                        aria-labelledby="first-tab" tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img" src="./images/product-1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="card-title-text">Sunstar Fresh Melon Juice</p>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <p class="unit"><small>1 unit</small></p>
+                                            <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                        </div>
+                                        <p class="price">$18.00</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                                <p class="m-0">4</p>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                            </div>
+                                            <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                        alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="second-tab-pane" role="tabpanel" aria-labelledby="second-tab"
+                        tabindex="0">...
+                        ...
+                    </div>
+                    <div class="tab-pane fade" id="third-tab-pane" role="tabpanel" aria-labelledby="third-tab"
+                        tabindex="0">...
+                    </div>
+                    <div class="tab-pane fade" id="fourth-tab-pane" role="tabpanel" aria-labelledby="fourth-tab"
+                        tabindex="0">...
+                    </div>
+                    <div class="tab-pane fade" id="fifth-tab-pane" role="tabpanel" aria-labelledby="fifth-tab"
+                        tabindex="0">...
+                    </div>
+                    <div class="tab-pane fade" id="six-tab-pane" role="tabpanel" aria-labelledby="six-tab" tabindex="0">
+                        ...
+                    </div>
+                    <div class="tab-pane fade" id="seven-tab-pane" role="tabpanel" aria-labelledby="seven-tab"
+                        tabindex="0">...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promos">
+            <div class="container d-flex gap-3">
+                <div class="promos-block first-promo">
+                    <div class="promos-block-texts">
+                        <p class="promo-block-descount">Upto 15% Off</p>
+                        <h3 class="promo-block-title">Luxa Dark Chocolate</h3>
+                        <p class="promo-block-body">Chocolate is only the happiness that you can eat</p>
+                        <a href="#" class="promo-block-btn">Shop it</a>
+                    </div>
+                    <div class="promos-block-img">
+                        <img src="./images/portraits.png" alt="">
+                    </div>
+                </div>
+                <div class="promos-block second-promo">
+                    <div>
+                        <p class="promo-block-descount">Upto 25% Off</p>
+                        <h3 class="promo-block-title">Creamy Muffins</h3>
+                        <p class="promo-block-body">Very tasty & very creamy vanilla flavour creamy muffins</p>
+                        <a href="#" class="promo-block-btn">Shop it</a>
+                    </div>
+                    <div>
+                        <img src="./images/muffins.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top">
+            <div class="container">
+                <div class="car-nav d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <h3 class="sect-title">Top offered products</h3>
+                        <a class="timer-btn" href="#"><span><img src="./images/clock.svg" alt=""></span> Expires in:
+                            12hr : 41min : 8s</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex gap-2">
+                            <div class="top-button-prev swipers-bttn-prev"><img src="./images/chev-left.svg" alt="">
+                            </div>
+                            <div class="top-button-next swipers-bttn-next"><img src="./images/chev-right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper top-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="producto-card-options">
+                                        <p class="green-badget">-25%</p>
+                                        <img src="./images/heart-outlined.png" alt="">
+                                    </div>
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price"><span>$12.00</span> $8.00</p>
+                                    <p class="orange-sold">Sold: 30/40</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="producto-card-options">
+                                        <p class="green-badget">-25%</p>
+                                        <img src="./images/heart-outlined.png" alt="">
+                                    </div>
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price"><span>$12.00</span> $8.00</p>
+                                    <p class="orange-sold">Sold: 30/40</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="producto-card-options">
+                                        <p class="green-badget">-25%</p>
+                                        <img src="./images/heart-outlined.png" alt="">
+                                    </div>
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price"><span>$12.00</span> $8.00</p>
+                                    <p class="orange-sold">Sold: 30/40</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="producto-card-options">
+                                        <p class="green-badget">-25%</p>
+                                        <img src="./images/heart-outlined.png" alt="">
+                                    </div>
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price"><span>$12.00</span> $8.00</p>
+                                    <p class="orange-sold">Sold: 30/40</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="producto-card-options">
+                                        <p class="green-badget">-25%</p>
+                                        <img src="./images/heart-outlined.png" alt="">
+                                    </div>
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price"><span>$12.00</span> $8.00</p>
+                                    <p class="orange-sold">Sold: 30/40</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="producto-card-options">
+                                        <p class="green-badget">-25%</p>
+                                        <img src="./images/heart-outlined.png" alt="">
+                                    </div>
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price"><span>$12.00</span> $8.00</p>
+                                    <p class="orange-sold">Sold: 30/40</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div>
+                    <h3>
+                        Get <span>20% discount</span> on your first purchase
+                    </h3>
+                    <p>
+                        Just Sign Up & Register it now to become member of Templates Jungle.
+                    </p>
+                </div>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <div class="custom-input">
+                            <img src="./images/envelop.svg" alt="">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="templatesjungle@gmail.com">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <div class="custom-input">
+                            <img src="./images/locker.svg" alt="">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Create a password...">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+                        <div class="custom-input">
+                            <img src="./images/locker.svg" alt="">
+                            <input type="password" class="form-control" id="exampleInputPassword2"
+                                placeholder="Repeat password...">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="top alt-one">
+            <div class="container">
+                <div class="car-nav d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <h3 class="sect-title">Best selling products</h3>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex gap-2">
+                            <div class="top-button-prev-ao swipers-bttn-prev"><img src="./images/chev-left.svg" alt="">
+                            </div>
+                            <div class="top-button-next-ao swipers-bttn-next"><img src="./images/chev-right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper top-swiper-alt-one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top alt-two">
+            <div class="container">
+                <div class="car-nav d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <h3 class="sect-title">Just landed items</h3>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex gap-2">
+                            <div class="top-button-prev-at swipers-bttn-prev"><img src="./images/chev-left.svg" alt="">
+                            </div>
+                            <div class="top-button-next-at swipers-bttn-next"><img src="./images/chev-right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper top-swiper-alt-two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img class="card-img" src="./images/product-2.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title-text">Pacific barista beverage</p>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <p class="unit"><small>1 unit</small></p>
+                                        <p class="rating"><span><img src="./images/star.svg" alt=""></span> 4.5</p>
+                                    </div>
+                                    <p class="price">$8.00</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">-</button>
+                                            <p class="m-0">4</p>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary qtty-btn">+</button>
+                                        </div>
+                                        <a class="add-cart" href="#">Add to cart <span><img src="./images/cart.svg"
+                                                    alt=""></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="container">
+                <div class="car-nav d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <h3 class="sect-title">Our Latest Articles</h3>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex gap-2">
+                            <a class="more-btn" href="#">Read All Articles <span><img src="./images/small-right-arr.svg"
+                                        alt=""></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img" src="./images/art-1.png" alt="">
+                            <div class="card-body">
+
+                                <p class="unit"><small><span><img src="./images/calendar-2.svg" alt=""></span> jan,
+                                        2021 | <span><img src="./images/clock-2.svg" alt=""></span>15 MIN</small>
+                                </p>
+                                <p class="card-title-text">Right way to preserve the fruits & other organics</p>
+
+                                <p class="price">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend
+                                    viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img" src="./images/art-2.png" alt="">
+                            <div class="card-body">
+
+                                <p class="unit"><small><span><img src="./images/calendar-2.svg" alt=""></span> jan,
+                                        2021 | <span><img src="./images/clock-2.svg" alt=""></span>15 MIN</small>
+                                </p>
+                                <p class="card-title-text">Right way to preserve the fruits & other organics</p>
+
+                                <p class="price">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend
+                                    viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img" src="./images/art-3.png" alt="">
+                            <div class="card-body">
+
+                                <p class="unit"><small><span><img src="./images/calendar-2.svg" alt=""></span> jan,
+                                        2021 | <span><img src="./images/clock-2.svg" alt=""></span>15 MIN</small>
+                                </p>
+                                <p class="card-title-text">Right way to preserve the fruits & other organics</p>
+
+                                <p class="price">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend
+                                    viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div>
+                    <img class="floating-img" src="./images/phone.png" alt="">
+                </div>
+                <div>
+                    <h3 class="shop-title">Shop faster with foodmart App</h3>
+                    <p class="shop-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus
+                        liberolectus nonet
+                        psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in
+                        suspendisse iaculis. Amet blandit tortor praesent ante vitae. A, enim pretiummi senectus magna.
+                        Sagittis sed ptibus liberolectus non et psryroin.</p>
+                    <div class="d-flex gap-3">
+                        <img src="./images/google-store.png" alt="">
+                        <img src="./images/apple-store.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics">
+            <div class="container">
+                <div class="car-nav d-flex justify-content-start align-items-center">
+                    <div class="d-flex align-items-center gap-4">
+                        <h3 class="sect-title">People are also looking for</h3>
+                    </div>
+                </div>
+                <div>
+                    <span class="badge text-bg-custom">Blue diamon almonds</span>
+                    <span class="badge text-bg-custom">Angie’s Boomchickapop Corn</span>
+                    <span class="badge text-bg-custom">Salty kettle Corn</span>
+                    <span class="badge text-bg-custom">Chobani Greek Yogurt</span>
+                    <span class="badge text-bg-custom">Sweet Vanilla Yogurt</span>
+                    <span class="badge text-bg-custom">Foster Farms Takeout Crispy wings</span>
+                    <span class="badge text-bg-custom">Warrior Blend Organic</span>
+                    <span class="badge text-bg-custom">Encore Seafoods Stuffed Alaskan Salmon</span>
+                    <span class="badge text-bg-custom">Chao Cheese Creamy</span>
+                    <span class="badge text-bg-custom">Chicken meatballs</span>
+                    <span class="badge text-bg-custom">Werther’s caramel hard candies</span>
+                    <span class="badge text-bg-custom">Mate coffee creamer</span>
+                    <span class="badge text-bg-custom">Pasture raised chicken eggs</span>
+                    <span class="badge text-bg-custom">Tree top fruit water</span>
+                    <span class="badge text-bg-custom">Natural Vanilla Light Roast Coffee</span>
+                    <span class="badge text-bg-custom">Sweet Vanilla essence Yogurt</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-5">
+                    <div class="col">
+                        <h4 class="feat-title"><span><img src="./images/cart-ico-alt.svg" alt=""></span> Free delivery
+                        </h4>
+                        <p class="feat-body">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                    </div>
+                    <div class="col">
+                        <h4 class="feat-title"><span><img src="./images/shield.svg" alt=""></span> 100% secure payment
+                        </h4>
+                        <p class="feat-body">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                    </div>
+                    <div class="col">
+                        <h4 class="feat-title"><span><img src="./images/badget.svg" alt=""></span> Quality guarantee
+                        </h4>
+                        <p class="feat-body">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                    </div>
+                    <div class="col">
+                        <h4 class="feat-title"><span><img src="./images/money.svg" alt=""></span> guaranteed savings
+                        </h4>
+                        <p class="feat-body">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                    </div>
+                    <div class="col">
+                        <h4 class="feat-title"><span><img src="./images/offers.svg" alt=""></span> Daily offers</h4>
+                        <p class="feat-body">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-5">
+                <div class="col">
+                    <img src="./images/logo.png" alt="">
+                    <div class="socials">
+                        <span><img src="./images/facebook.png" alt=""></span>
+                        <span><img src="./images/twitter.png" alt=""></span>
+                        <span><img src="./images/printerest.png" alt=""></span>
+                        <span><img src="./images/instagram.png" alt=""></span>
+                        <span><img src="./images/youtube.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col aligned-cols">
+                    <div>
+                        <h4 class="menu-title">ouick links</h4>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Offers</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col aligned-cols">
+                    <div>
+                        <h4 class="menu-title">About</h4>
+                        <ul>
+                            <li><a href="">How it work</a></li>
+                            <li><a href="">our packages</a></li>
+                            <li><a href="">promotions</a></li>
+                            <li><a href="">refer a friend</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col aligned-cols">
+                    <div>
+                        <h4 class="menu-title">Help Center</h4>
+                        <ul>
+                            <li><a href="">Payments</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Product returns</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li><a href="">other Issues</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4 class="menu-title">Our newsletter</h4>
+                    <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+                    <form action="" id="subs-form">
+                        <input type="text" name="" id="" placeholder="Enter your email-address">
+                        <button>Send <span><img src="./images/i-go.svg" alt=""></span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="copyright">© 2022 TemplatesJungle. All rights reserved.</p>
+                <p class="copyright">Design by <b>TemplatesJungle</b></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".categories-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: ".cat-button-next",
+                prevEl: ".cat-button-prev",
+            },
+        });
+        var swiper2 = new Swiper(".arrived-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: ".arrived-button-next",
+                prevEl: ".arrived-button-prev",
+            },
+        });
+        var swiper3 = new Swiper(".top-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: ".top-button-next",
+                prevEl: ".top-button-prev",
+            },
+        });
+        var swiper4 = new Swiper(".top-swiper-alt-one", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: ".top-button-next-ao",
+                prevEl: ".top-button-prev-ao",
+            },
+        });
+        var swiper5 = new Swiper(".top-swiper-alt-two", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: ".top-button-next-at",
+                prevEl: ".top-button-prev-at",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
